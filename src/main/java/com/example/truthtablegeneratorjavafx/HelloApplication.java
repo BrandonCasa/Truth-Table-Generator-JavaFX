@@ -2,13 +2,11 @@ package com.example.truthtablegeneratorjavafx;
 
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
+
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
+
 import javafx.scene.image.Image;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -37,7 +35,6 @@ public class HelloApplication extends Application {
         String imageName = "/question_mark.png";
         helpWindow.getIcons().add(new Image(HelloApplication.class.getResourceAsStream(imageName)));
 
-
         Label helpLabel = new Label();
         helpLabel.setStyle("-fx-wrap-text: True;" +
                 "-fx-font-size: 18;"
@@ -52,8 +49,6 @@ public class HelloApplication extends Application {
 
         helpLabel.setText(helpString);
         stackPane.getChildren().add(helpLabel);
-
-
 
 
         Model model = new ModelImpl(this);

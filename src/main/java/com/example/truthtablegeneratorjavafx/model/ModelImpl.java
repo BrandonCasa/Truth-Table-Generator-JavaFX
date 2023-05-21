@@ -151,7 +151,6 @@ public class ModelImpl implements Model {
         return parsedTokens;
     }
 
-
     public void main(String formula) {
 
         // program bugs out if it's an empty string, so we just don't do anything if that's the case.
